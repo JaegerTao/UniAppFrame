@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Jaeger",
+  "usingComponents": {
+    "component-01": "/components/component-01/component-01"
+  }
+}
