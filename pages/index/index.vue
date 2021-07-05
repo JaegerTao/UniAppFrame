@@ -4,18 +4,26 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
-		<component-01></component-01>
+		<component-01 title="我是框架引入的组件"></component-01>
+		
+		<test-component title="我是自引入的组件"></test-component>
+		<!-- 也可以以如下驼峰式命名使用 -->
+		<!-- <testComponent title="我是自引入的组件"></testComponent> -->
 	</view>
 </template>
 
 <script>
 	import indexapi from '@/common/apis/index/indexapi.js'
 	import {mapState, mapMutations, mapActions} from 'vuex'
+	import testComponent from './index-components/test-component.vue'
 	export default {
 		data() {
 			return {
 				title: 'Hello'
 			}
+		},
+		components:{
+			testComponent
 		},
 		onLoad() {
 
