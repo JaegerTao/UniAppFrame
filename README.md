@@ -11,3 +11,6 @@ npm run dev
 
 2.manifest.json
 微信开发需配置微信小程序配置，填写微信小程序的APPID，在微信开发者工具中使用小程序的开发者角色权限微信号进行登录
+
+3.项目UI框架
+本项目引入了colorUI框架，这是一款基于css的UI框架，支持许多基础样式的实现，使用方式详见DCloud插件市场中的ColorUI-UniApp前端模板
