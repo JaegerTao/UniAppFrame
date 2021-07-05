@@ -1,8 +1,13 @@
+//封装uni.request
 import Vue from 'vue'
 let vm = new Vue()
 
+//接口主地址
 let HOST = "http://localhost:8080"
 
+/**
+ * 不携带header参数的get请求
+ */
 const jget = (url, params) =>{
 	return new Promise((resolve, reject)=>{
 		uni.request({
@@ -18,7 +23,9 @@ const jget = (url, params) =>{
 		})
 	})
 }
-
+/**
+ * 不携带header参数的post请求
+ */
 const jpost = (url, params) =>{
 	return new Promise((resolve, reject)=>{
 		uni.request({
@@ -38,7 +45,7 @@ const jpost = (url, params) =>{
 	})
 }
 
-//携带token、session的get请求
+//携带haeder参数的get请求
 const tget = (url, params) =>{
 	return new Promise((resolve, reject)=>{
 		uni.request({
@@ -58,7 +65,7 @@ const tget = (url, params) =>{
 	})
 }
 
-//带有token、session的post
+//带有haeder参数的post
 const tpost = (url, params) =>{
 	return new Promise((resolve, reject)=>{
 		uni.request({
