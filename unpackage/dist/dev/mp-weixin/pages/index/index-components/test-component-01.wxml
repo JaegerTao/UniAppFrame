@@ -1,3 +1,0 @@
-<view class="text-blue data-v-9e8d1e38">{{''+title+''}}<text class="data-v-9e8d1e38">\n
-		自引入组件，需要在页面中先import本组件vue，然后在components属性中加入组件名称，
-		就可以在页面中使用了</text></view>

@@ -10279,11 +10279,16 @@ device;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+/* WEBPACK VAR INJECTION */(function(uni) {
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //封装uni.request
 var vm = new _vue.default();
 
+//接口主地址
 var HOST = "http://localhost:8080";
 
+/**
+                                     * 不携带header参数的get请求
+                                     */
 var jget = function jget(url, params) {
   return new Promise(function (resolve, reject) {
     uni.request({
@@ -10299,7 +10304,9 @@ var jget = function jget(url, params) {
 
   });
 };
-
+/**
+    * 不携带header参数的post请求
+    */
 var jpost = function jpost(url, params) {
   return new Promise(function (resolve, reject) {
     uni.request({
@@ -10319,7 +10326,7 @@ var jpost = function jpost(url, params) {
   });
 };
 
-//携带token、session的get请求
+//携带haeder参数的get请求
 var tget = function tget(url, params) {
   return new Promise(function (resolve, reject) {
     uni.request({
@@ -10339,7 +10346,7 @@ var tget = function tget(url, params) {
   });
 };
 
-//带有token、session的post
+//带有haeder参数的post
 var tpost = function tpost(url, params) {
   return new Promise(function (resolve, reject) {
     uni.request({
@@ -10641,19 +10648,7 @@ Vregular;exports.default = _default;
 /* 24 */,
 /* 25 */,
 /* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */
+/* 27 */
 /*!*********************************************************!*\
   !*** D:/GitProject/Frame/common/apis/index/indexapi.js ***!
   \*********************************************************/

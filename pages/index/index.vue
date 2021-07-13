@@ -9,6 +9,14 @@
 		<test-component title="我是自引入的组件"></test-component>
 		<!-- 也可以以如下驼峰式命名使用 -->
 		<!-- <testComponent title="我是自引入的组件"></testComponent> -->
+		
+		<view class="UI" :style="{
+					'--box-width': width + 'rpx',
+					'--box-height': height + 'rpx'
+				}">
+			css中使用data变量
+		</view>
+		
 	</view>
 </template>
 
@@ -19,14 +27,20 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				color: '#555',
+				width: 500,
+				height: 100
 			}
 		},
 		components:{
 			testComponent
 		},
+		computed:{
+			
+		},
 		onLoad() {
-
+			
 		},
 		computed:{
 			//以参数解构的方式使用vuex中的状态
@@ -45,12 +59,11 @@
 					//错误处理
 				})
 			}
-			
 		}
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -75,5 +88,11 @@
 	.title {
 		font-size: 36rpx;
 		color: #8f8f94;
+	}
+	
+	.UI{
+		height: var(--box-height);
+		width: var(--box-width);
+		background-color: #007AFF;
 	}
 </style>
