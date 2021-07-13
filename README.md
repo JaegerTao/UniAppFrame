@@ -39,9 +39,9 @@ npm run dev
 - ### 本项目使用了less
 
 
-本框架中使用了less，请在项目运行前通过DCloud插件市场引入less插件。
+本框架中使用了less/scss预处理器，请在项目运行前通过DCloud插件市场引入less和scss插件。
 
-如果不需要使用less，只需要css，那么可以在包含下方代码的示例页面和组件中
+如果不需要使用less/scss，只需要css，那么可以在包含下方代码的示例页面和组件中
 
 ```css
 <style lang="less" scoped>
