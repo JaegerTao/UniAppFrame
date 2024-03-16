@@ -25,35 +25,22 @@
 /* 透明度 */
 /* 文章场景相关 */
 .content {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .logo {
   height: 200rpx;
   width: 200rpx;
-  margin-top: 200rpx;
+  margin-top: 50rpx;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50rpx;
 }
 .text-area {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+  justify-content: center;
 }
 .title {
   font-size: 36rpx;
@@ -63,5 +50,8 @@
   height: var(--box-height);
   width: var(--box-width);
   background-color: #007AFF;
+}
+button {
+  margin-bottom: 5rpx;
 }
 

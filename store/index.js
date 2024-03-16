@@ -35,9 +35,9 @@ const store = new Vuex.Store({
 			state.sessionid = sessionid
 		}
 	},
-	//异步
+	//异步方法
 	actions:{
-		//清除缓存中的sessionid和状态sessionid
+		//设置内存缓存中的sessionid 以及 状态sessionid
 		async asessionid({commit}, sessionid){
 			try{
 				storageEx.setStorageExpire('sessionid', sessionid)

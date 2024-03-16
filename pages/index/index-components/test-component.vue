@@ -11,17 +11,22 @@
 			例如本例子 test-component, 在index页面中引入的时候 import testComponent from '...'
 			页面中使用时仍可使用 {{'<'}}test-component{{'><'}}/test-component{{'>'}}这种形式
 		</text>
+		
+		<button class="cu-btn" @click="sendToFather">点击向父组件传递参数</button>
+		
 	</view>
 </template>
 <script>
 	export default{
 		data(){
 			return{
-				
+				dataTrans: 100,
 			}
 		},
 		methods:{
-			
+			sendToFather(){
+				this.$emit("getDataTrans", { dataTrans: this.dataTrans })
+			}
 		},
 		props:{
 			title:{

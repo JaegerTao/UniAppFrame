@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "Jaeger",
+  "navigationBarTitleText": "首页",
   "usingComponents": {
     "component-01": "/components/component-01/component-01",
     "test-component": "/pages/index/index-components/test-component"

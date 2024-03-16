@@ -51,7 +51,7 @@ device.install = function(Vue) {
 	Vue.prototype.$devicePixelRatio = function() {
 		return devicePixelRatio
 	},
-	//显示失败提示信息
+	//显示失败提示信息 - 也可用于其他提示信息，不显示图标，汉字可以显示两行
 	Vue.prototype.$ToastFail = function(text) {
 		uni.showToast({
 			icon: 'none',
@@ -59,7 +59,7 @@ device.install = function(Vue) {
 			duration: 2000
 		})
 	},
-	//显示成功提示消息
+	//显示成功提示消息，text长度有限制 最多显示 7 个汉字长度
 	Vue.prototype.$ToastSuccess = function(text) {
 		uni.showToast({
 			icon: 'success',
@@ -67,7 +67,7 @@ device.install = function(Vue) {
 			duration: 2000
 		})
 	},
-	//显示加载
+	//显示加载中图标，并增加蒙层，灰色
 	Vue.prototype.$showLoading = function(text) {
 		uni.showLoading({
 			title: text,

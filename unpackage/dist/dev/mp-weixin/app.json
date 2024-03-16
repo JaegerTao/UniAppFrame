@@ -1,6 +1,10 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/person/person",
+    "pages/personIn/personIn",
+    "pages/personInTwo/personInTwo",
+    "pages/VideoPlay/VideoPlay"
   ],
   "subPackages": [],
   "window": {
@@ -9,6 +13,20 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/homeHL.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "static/icons/user.png",
+        "selectedIconPath": "static/icons/userHL.png"
+      }
+    ]
+  },
+  "usingComponents": {}
 }

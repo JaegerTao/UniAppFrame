@@ -1,0 +1,9 @@
+view{
+	font-size: 35rpx;
+}
+
+.myBtn{
+	width: 375rpx;
+	transform: scale(0.7);
+}
+

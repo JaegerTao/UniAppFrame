@@ -9,18 +9,19 @@
 </template>
 <script>
 	export default{
-		data(){
+		name:"component-01",
+		data(){ //组件内部属性
 			return{
 				
 			}
 		},
-		props:{
+		props:{ //组件属性
 			title:{
 				type: String,
 				default: "组件标题"
 			}
 		},
-		methods:{
+		methods:{ //组件中内部方法
 			
 		}
 	}
